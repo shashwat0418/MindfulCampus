@@ -1,0 +1,1078 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="nationalemv.png" type="image/x-icon">
+    <style>
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.copyh{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100px;
+}
+.header 
+{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+.header .logo 
+{
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.nav-items 
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+.nav-items a 
+{
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+.intro 
+{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro p 
+{
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.Learnmore
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.Learnmore button 
+{
+    background-color: palegoldenrod;
+    color: #000;
+    padding: 10px 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+ .Benefits
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.symtoms 
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+  
+}
+
+.symtoms .work 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.symtoms .work i 
+{
+  width: fit-content;
+  font-size: 50px;
+  color: #333333;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 12px;
+}
+
+.symtoms .work .work-heading {
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.symtoms .work .work-text {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+.aboutproject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+.aboutproject img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.aboutproject-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+.aboutproject-text p {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: paleturquoise;
+  padding: 40px 80px;
+}
+.footer .copy {
+  color: #fff;
+}
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px ;
+}
+.bottom-links .links a 
+{
+  text-decoration: none;
+  color: #a1a1a1;
+  padding: 10px 20px;
+}
+.downlayout
+{
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+.shashwatdiv1
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.privacy
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+
+}
+.privacy1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+.privacy1:hover{
+  transform: scale(1.1);
+
+}
+.privacy:hover{
+  transform: scale(1.1);
+}
+.Anxiety
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+.Social-Anxiety
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+.Concerns
+{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+  text-decoration: none;
+  
+}
+.anyother
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.anyother button {
+    background-color: lightgreen;
+    color: olive;
+    padding: 10px 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.anyother:hover{
+  transform: scale(1.1);
+}
+.ourdoctors
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dibbba
+{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 33%;
+  height: 150px;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: auto;
+  
+}
+.dibbba2
+{
+    background-color: lightsalmon;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 33%;
+  height: 150px;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: auto;
+  
+}
+.dibbba2 a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+}
+.dibbba3
+{
+    background-color: whitesmoke;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 33%;
+  height: 150px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: auto;
+  
+}
+.dibbba3 a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+}
+.dibbba a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+}
+.dibbba4
+{
+    background-color: lightgrey;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 85%;
+  height: 80px;
+  border-radius: 50px;
+  margin-left: 10px;
+  overflow: auto;
+
+  
+}
+.dibbba4 a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+}
+.dibbba5
+{
+    background-color: lightgreen;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 35%;
+  height: 80px;
+  border-radius: 5px;
+  margin-left:45px;
+  margin-right: 3%;
+  margin-bottom: 80px;
+  overflow: auto;
+}
+.dibbba5 a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+}
+.dibbba6
+{
+    background-color: pink;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: auto;
+  height: 150px;
+  border-radius: 10px;
+  margin-left:10px;
+  margin-right: 3%;
+  overflow: auto;
+}
+.dibbba6 a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+}
+.dibbba7
+{
+    background-color: peachpuff;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: auto;
+  height: 100px;
+  border-radius: 3px;
+  margin-left:10px;
+  margin-right: 3%;
+  margin-top: 50px;
+  overflow: auto;
+  
+}
+.dibbba7 a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+}
+.dibbba8
+{
+    background-color: #5edaf0;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+  margin-left:10px;
+  margin-right: 3%;
+  overflow: auto;
+}
+.dibbba8 a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+}
+.faqs
+{
+    margin-left: 10px;
+}
+.ht{
+    font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+  text-decoration: none;
+
+}
+.lltt
+{
+    font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+  text-decoration: dashed;
+}
+.vh1
+{
+  text-decoration: none;
+  color: #a1a1a1;
+}
+.introD
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: yellow;
+
+}
+.introD video{
+  border-radius: 50%;
+  background-color: black;
+}
+.goverment
+{
+   border-radius: 30px;
+   width:120px;
+}
+.contact{
+  width: 100%;
+  height: auto;
+ 
+  margin-top: 10px;
+}
+.con1 h2{
+  margin-left: 20px;
+}
+.con2{
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-around;
+}
+.condibbas{
+  display:block;
+  width:16%;
+  height: auto;
+  overflow: auto;
+}
+.social-icons {
+    display: flex;
+   
+}
+
+.icon {
+    
+    width: 40px;
+
+    height: 40px;
+    margin: 0 10px;
+    background-color: #ccc;
+    background-size: contain;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.facebook {
+  background-image: url(facboookicon.png); 
+   }
+.twitter { background-image: url(instagram.webp); }
+.instagram { background-image: url(linkedin.png); }
+
+.icon:hover {
+    transform: scale(1.2); 
+}
+.con2 a{
+  text-decoration: none;
+  color: #bc2a8d;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ko{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #000;
+            text-decoration:none;
+}
+.header h2{
+  font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #000;
+            text-decoration: none;
+}
+.mishra {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .slider-content {
+            display: flex;
+            transition: transform 0.5s ease; 
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            height: auto;
+           
+            text-align: center;
+         
+            justify-content: space-between;
+        }
+        
+        #slide1:checked~.slider-content {
+            transform: translateX(0%);
+        }
+
+        #slide2:checked~.slider-content {
+            transform: translateX(-100%);
+        }
+
+        #slide3:checked~.slider-content {
+            transform: translateX(-200%);
+        }
+
+     
+        .slider-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            top: 90%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-color: #3498db;
+            
+        }
+
+       
+        .slider-nav label:hover {
+            background-color: #aaa;
+        }
+
+        #slide1:checked~.slider-nav label:nth-child(1),
+        #slide2:checked~.slider-nav label:nth-child(2),
+        #slide3:checked~.slider-nav label:nth-child(3) {
+            background-color: #3498db;
+        }
+        .d1{
+           
+            height: auto;
+            width: 35%;
+            overflow: auto;
+            
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            transition: box-shadow 0.3s ease;
+            margin-left: 30px;
+        }
+        
+        .d2{
+            
+            height: auto;
+            width: 35%;
+            overflow: auto;
+           
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            transition: box-shadow 0.3s ease;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .d3{
+            
+            height: auto;
+            width: 35%;
+            overflow: auto;
+            text-align: center;
+            
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+        .terabap {
+            font-family: Arial, sans-serif;
+        }
+
+        .pandit-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .pandit-content {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .ganga {
+            flex: 0 0 100%;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            object-fit: cover;
+        }
+
+        .ganga img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .pandit-pointer {
+            position: absolute;
+            bottom: 10px;
+            top: 1%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .pointer {
+            flex: 0 0 10px;
+            height: 10px;
+            background-color: #aaa;
+            margin: 0 5px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .pointer.active {
+            background-color: #3498db;
+        }
+        .chc , .ht , .con1{ 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .main-container {
+      text-align: center;
+    }
+
+    #loginModal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      margin: auto;
+    }
+
+    .close-button {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+
+    .okwell{
+      width: 100px;
+     height:30px;
+     border-radius: 30px;
+     cursor :pointer;
+        background-color: red;
+    transition: transform 0.3s ease-in-out;
+    }
+    .okwell:hover{
+      transform: scale(1.2); 
+      
+    }
+  .every{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .l{
+    background-color: paleturquoise;
+    font-size:xx-large;
+  }
+</style>
+</head>
+<body>
+    <header class="header">
+      <img class="goverment" src="nationalemv.png" alt="">
+        <h2>MindfulCampus</h2>
+        <nav class="nav-items">
+          <a href="blog2.html">BLOG</a>
+          <a href="About-us.html">ABOUT</a>
+          <a href="contactus.html">CONTACT</a>
+          <div id="login-option">
+            <p id="login-message" style="color: blue; display: none;">Login option available!</p>
+            <button class="okwell" id="login-button" onclick="redirectToLogin()">Login</button>
+        </div>
+       </nav>
+      </header>
+      <div class="copyh">
+      </div>
+      <div class="terabap"> <div class="pandit-container">
+        <div class="pandit-content">
+            <div class="ganga"><img  src="img3.jpeg" alt="Image 1"></div>
+            <div class="ganga"><img src="childrenmentalhealthpic2.jpeg" alt="Image 2"></div>
+            <div class="ganga"><img src="childrenimage3.avif" alt="Image 3"></div>
+        </div>
+        <div class="pandit-pointer">
+            <div class="pointer" onclick="currentganga(1)"></div>
+            <div class="pointer" onclick="currentganga(2)"></div>
+            <div class="pointer" onclick="currentganga(3)"></div>
+        </div>
+    </div>
+    
+    <script>
+        let currentgangaIndex = 1;
+        function showganga(n) {
+            const gangas = document.querySelector('.pandit-content');
+            const pointers = document.querySelectorAll('.pointer');
+    
+            if (n > gangas.children.length) {
+                currentgangaIndex = 1;
+            } else if (n < 1) {
+                currentgangaIndex = gangas.children.length;
+            }
+    
+            gangas.style.transform = `translateX(-${(currentgangaIndex - 1) * 100}%)`;
+            pointers.forEach(pointer => pointer.classList.remove('active'));
+            pointers[currentgangaIndex - 1].classList.add('active');
+        }
+    
+        function currentganga(n) {
+            showganga(currentgangaIndex = n);
+        }
+    
+        showganga(currentgangaIndex);
+    </script>
+    <hr>
+    </div>
+        <div class="chc">
+            <em><h2>Common Health Concerns</h2></em>
+        </div>
+        <div>
+            <div class="symtoms">
+                <div class="work">
+                  <p class="work-heading">Depression?
+                </p>
+                  <p class="work-text"></p>
+                 <a href="dipresion.html">
+                  <img class="privacy" src="dip1.jpg" alt="">
+                 </a>
+                  
+                </div>
+                <div class="work">
+                  <p class="work-heading">Anxiety?</p>
+                  <a href="Anxity.html">
+                    <img class="privacy" src="dip2.jpg" alt="">
+                  </a>
+                </div>
+                <div class="work">
+                  <p class="work-heading">Social-Anxiety?</p>
+                  <a href="socialanxity.html">
+                    <img class="privacy" src="dip3.jpg" alt="">
+                  </a>
+                </div>
+                
+        </div>
+        <div class="anyother">
+            <a class="ko" href="problems.html" target="_blank">
+              <button class="ko"> Any Other Menatl Health problems</button>
+            </a>
+        </div>
+        <div class="every">
+          <h2 >Concert to our doctor's</h2>
+        </div>
+        <div>
+          <div class="symtoms">
+            <div class="work">
+              <p class="work-heading">Dr.Gayathri Krotha</p>
+              <a href="Doctor's.html">
+                <img class="privacy1" src="gayatri.jpeg" alt="">
+              </a>
+            </div>
+              <div class="work">
+                <p class="work-heading">Dr.Suhita-Saha</p>
+                <a href="Doctor's.html">
+                  <img class="privacy" src="Suhita-Saha.png.webp" alt="">
+                </a>
+              </div>
+              <div class="work">
+                <p class="work-heading">Dr.Udisha Sharama</p>
+                <a href="Doctor's.html">
+                  <img class="privacy" src="udishi.jpeg" alt="">
+                </a>
+              </div>
+      </div>
+      <div class="anyother">
+        <a class="ko" href="Doctor's.html" target="_blank">
+          <button class="ko"> Consult-doctors>></button>
+        </a>
+    </div>
+        <div>
+            <div class="Benefits">
+                <em><h2>Benefits Of Online Consultation </h2></em>
+            </div>
+            <div class="mishra">
+              <div class="slider-container">
+                  <input type="radio" id="slide1" name="slides" checked>
+                  <input type="radio" id="slide2" name="slides">
+                  <div class="slider-content">
+                      <div class="slide">
+                          <div class="d1">
+                              <h2>CONVENIENCE</h2>
+                              <p> Patients can access healthcare professionals from the comfort of their homes or any location with an internet connection. This eliminates the need for travel and waiting times, making healthcare more accessible.</p>
+                          </div>
+                          <div class="d2">
+                              <h2>ACCESSBILITY</h2>
+                              <p>Online consultations can bridge geographical barriers, ensuring that individuals in remote or underserved areas can access medical expertise.</p>
+                          </div>
+                          <div class="d3">
+                              <h2>PRIVACY</h2>
+                              <p>Some patients may feel more comfortable discussing sensitive health issues in the privacy of their homes rather than in a clinical setting.</p>
+                          </div>
+                      </div>
+                      <div class="slide"><div class="d1">
+                          <h2>REDUCED COST</h2>
+                          <p> Online consultations can be more cost-effective, as patients save on transportation, parking, and other related expenses.</p>
+                      </div>
+                      <div class="d2">
+                          <h2>ACCESS TO SPECIALISTS
+                          </h2>
+                          <p>Patients can connect with mental health professionals who specialize in their specific concerns, such as anxiety, depression, trauma, or addiction. This specialization can lead to more effective treatment</p>
+                      </div>
+                      <div class="d3">
+                          <h2>VARIETY OF SERVICES</h2>
+                          <p>Online mental health platforms offer a wide range of services, including therapy, counseling, psychiatric consultations, and self-help resources. Patients can find the specific type of support that best suits their needs.</p>
+                      </div></div>
+                      <div class="slide">Slide 3 Content</div>
+                  </div>
+          
+                  <div class="slider-nav">
+                      <label for="slide1"></label>
+                      <label for="slide2"></label>
+                      <label for="slide3"></label>
+                  </div>
+              </div>
+             </div>
+            <div >
+      <video class="introD" width="640" height="360" controls>
+        <source  src="vedio.mp4" type="video/mp4">
+        apka browser vedio support nahi kar rha 
+      </video>
+  </div>
+    <div class="faqs">
+        <h2 class="ht">FAQS</h2>
+    </div>
+    <div class="downlayout">
+        <div style="display: flex;"">
+            <div class="dibbba">
+                <a href="Faq1.html">DIFFERENCE BETWEEN 
+                  ANXIETY ATTACK
+                  AND PANIC ATTACK</a>
+            </div>
+            <div class="dibbba2">
+                <a href="faq2.html">WHAT DOES DEPRESSION LOOK LIKE IN CHILDREN?</a>
+            </div>
+            <div class="dibbba3">
+                <a href="faq3.html">SIGNS THAT YOUR CHILD IS DEALING WITH ANXIETY</a>
+            </div>
+        </div>
+        <div style="display: flex;"> 
+            <div class="dibbba4">
+                <a href="faq4.html">10 WAYS TO HELP AN ANXIOUS KID.</a>
+            </div>
+            <div class="dibbba5">
+                <a href="faq5.html">NURTURE YOUR CHILD’S MENTAL HEALTH</a>
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div class="dibbba6">
+                <a href="faq6..html">ANXIETY IN GROWING 
+                  TEENAGERS AND 
+                  IT’S SYMPTOMS</a>
+            </div>
+            <div class="dibbba7">
+                <a href="faq7.html">HOW TO CREATE A HEALTHY ENVIRONMENT FOR YOUR KID AT HOME?</a>
+            </div>
+            <div class="dibbba8">
+                <a href="faq8.html">13 WAYS TO SUPPORT YOUR TEEN IN FROWING SELF LOVE!</a>
+            </div>
+        </div>
+      </div>
+      </main>
+      <div class="contact">
+        <div class="con1">
+          <h2>MindfulCampus</h2>
+        </div>
+        <div class="con2">
+          <div class="condibbas">
+            <h3>About-mindfulcampus</h3>
+            <a href="About-us.html">Who WE are</a><br>
+            <a href="blog2.html">blog</a>
+          </div>
+          
+          <div class="condibbas">
+            <h3>Learnmore</h3>
+            <a href="#">Site-Map</a><br>
+            <a href="contactus.html">contact-us</a>
+          </div>
+          <div class="condibbas">
+            <h3 style="margin-left: 10px;">Social-Links</h3>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/shashwat-mishra-63aa2b247/" class="icon instagram"></a>
+              
+              <a href="https://www.instagram.com/_shashwat__01/" class="icon twitter"></a>
+              <a href="https://www.facebook.com/shashwat.mishra.528316" class="icon facebook"></a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="l">
+        <marquee   width="100%" direction="left" height="50px">
+            © 2023 Shashwat Mishra(Founder)
+         </marquee>
+         </div> 
+       <script>
+        var isLoggedIn = localStorage.getItem("isLoggedIn");
+
+          if (isLoggedIn) 
+          {
+              document.getElementById("login-option").style.display = "none";
+          }
+          function redirectToLogin() {
+              
+              alert("Redirecting to the login page");
+              
+              window.location.href = "rejistor_page.html";
+          }
+      </script>
+</body>
+</html>
