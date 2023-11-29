@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-us</title>
+    <style>
+        .main
+        {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .form{
+            background-color:palegoldenrod;
+            width: 45%;
+            height: 500px;
+            border-radius: 10px;
+            border: 5px ;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+            
+        }
+        .information{
+            background-color: lightskyblue;
+            width: auto;
+            height:500px;
+            border-radius: 10px;
+            border: 2px ;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+        
+        }
+        .name
+        {
+            margin-top: 10px;
+            border-radius: 10px;
+            width:45%;
+            height: 45px;
+            margin-left: 10px;
+        }
+        .name2{
+            margin-top: 10px;
+            border-radius: 10px;
+            width:90%;
+            height: 45px;
+            margin-left: 10px;
+        }
+        .message{
+            margin-top: 10px;
+            width: 90%;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .submit{
+            border-radius: 10%;
+            margin-top: 10px;
+            width: auto;
+            height: 50px;
+            margin-left: 10px;
+            background-color: lightskyblue;
+        }
+        .ss{
+            display: flex;
+            justify-content: center;
+        }
+        .info1{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .address,.phone {
+            display: flex;
+            align-items: center;
+        }
+
+        .address strong ,.phone{
+            margin-right: 5px;
+        }
+        .phone a{
+            text-decoration: none;
+            color:black;
+        }
+        .icon{
+            width: 40px;
+             height: 40px;
+             margin: 0 10px;
+            border-radius: 50%;
+             background-size: contain; 
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease-in-out;
+}
+.icon:hover {
+    transform: scale(1.2); /* Adjust the scale factor for the desired pop-up effect */
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+          <div class="ss"><h2>Get In Touch</h2></div>
+          <div>
+            <form class="shashwat" action="process_form.php" method="post">
+              
+                <label  for="name"></label>
+                <input class="name" type="text" placeholder="Name" id="name" name="name" required>
+                <label  for="name"></label>
+                <input class="name" type="text" placeholder="E-MAil" id="name" name="name" required>
+                <br>
+                <label for="email"></label>
+                <input class="name2" type="email" placeholder="subject" id="email" name="email" required><br>
+        
+              
+                <label for="message"></label>
+                <textarea class="message" id="message" placeholder="MESSAGE" name="message" rows="10"  required></textarea>
+                <br>
+                
+                <input class="submit" type="submit" value="Send Message">
+            </form>
+          </div>
+        </div>
+        <div class="information">
+            <div class="info1"><h2>Contact-Us</h2></div>
+            <div class="address">
+                <img class="icon" src="address-icon-15.png" alt="">
+                <strong>Address:</strong>
+                <p>D-Block,SaiHostel,ClementTown,Dehradun</p>
+                
+            </div>
+            <div class="phone">
+                <img class="icon" src="phoneicon.jpeg">
+                <strong>Phone:</strong>
+                <p>9336338956</p>
+            </div>
+            <div class="phone">
+                <img class="icon" src="email.jpeg" alt="">
+                <strong>Email:</strong>
+                <p>mishrashashwat0418@gamil.com</p>
+            </div>
+            <div class="phone">
+                <img class="icon" src="wesiteimage.webp" alt="">
+                <strong>Website:</strong>
+                <p><a href="index.html">Home</a></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

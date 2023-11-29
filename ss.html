@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        /* Your CSS styles for the home page */
+    </style>
+</head>
+<body>
+
+<div id="home-content">
+    <h2>Welcome to the Home Page</h2>
+
+    <div id="login-option">
+        <!-- Initially, show the login option -->
+        <p id="login-message" style="color: blue; display: none;">Login option available!</p>
+        <button id="login-button" onclick="redirectToLogin()">Login</button>
+    </div>
+</div>
+
+<script>
+    // Check if the user is logged in
+    var isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    if (isLoggedIn) {
+        // If the user is logged in, hide the login option
+        document.getElementById("login-option").style.display = "none";
+    }
+
+    function redirectToLogin() {
+        // Handle the login process as needed (e.g., redirect to the login page)
+        alert("Redirecting to the login page");
+        // You can redirect to your login page using window.location.href or other methods
+        window.location.href = "login.html";
+    }
+</script>
+
+</body>
+</html>

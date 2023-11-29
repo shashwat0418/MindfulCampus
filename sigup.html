@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #signup-form {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="signup-form">
+  <h2>Sign Up</h2>
+  <form id="register-form">
+    <label for="new-username">Username:</label>
+    <input type="text" id="new-username" name="new-username" required>
+
+    <label for="new-password">Password:</label>
+    <input type="password" id="new-password" name="new-password" required>
+
+    <button type="button" onclick="registerUser()">Sign Up</button>
+  </form>
+  <p id="signup-message" style="color: green;"></p>
+</div>
+
+<script>
+  function registerUser() {
+    var newUsername = document.getElementById("new-username").value;
+    var newPassword = document.getElementById("new-password").value;
+
+    // Simple registration, you should send data to a server and perform secure registration in a real application
+    alert("User registered successfully!");
+    // Optionally, clear the form fields after successful registration
+    document.getElementById("new-username").value = "";
+    document.getElementById("new-password").value = "";
+  }
+</script>
+
+</body>
+</html>

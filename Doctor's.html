@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doctotrs Page</title>
+    <style>
+        *{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+    .copyh{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f5f5f5;
+        width: 100%;
+        height: 100px;
+      }
+      .header 
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f5f5f5;
+        width: 100%;
+      }
+      .header .logo 
+      {
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        margin-left: 30px;
+      }
+      .nav-items 
+      {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #f5f5f5;
+        margin-right: 20px;
+      }
+      .nav-items a 
+      {
+        text-decoration: none;
+        color: #000;
+        padding: 35px 20px;
+      }
+      .goverment
+{
+   border-radius: 30px;
+   width:120px;
+}
+.headerpic{
+    width: 100%;
+    height: auto;
+   
+    margin-top: 30px;
+}
+.intro 
+{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.intro p 
+{
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+.quiz{
+    
+    display: flex;
+    background-color: lightcyan;
+    float: left;
+  
+  margin-right: 10px;
+  
+  width: 15%;
+  height: 450px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 20px;  
+}
+.quiz2{
+   
+    border-radius: 30px;
+    border: 2px lightblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  overflow: auto;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    overflow: auto;
+}
+.toggle-button {
+    border: 2px lightblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        color: white;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .q1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+    }
+    
+    #signup-form {
+      width: 300px;
+      padding: 20px;
+      
+      
+    }
+    #signup-form h2{
+        float: inline;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .hell
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .uname ,.pass{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pos{
+        border-radius: 20px;
+    }
+    .tre{
+        border-radius: 20px;
+    }
+    .niche2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        width: auto;
+        height: auto;
+    }
+    .info1{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .address,.phone {
+            display: flex;
+            align-items: center;
+        }
+
+        .address strong ,.phone{
+            margin-right: 5px;
+        }
+        .phone a{
+            text-decoration: none;
+            color:black;
+        }
+        .icon{
+            width: 40px;
+             height: 40px;
+             margin: 0 10px;
+            border-radius: 50%;
+             background-size: contain; 
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease-in-out;
+}
+.icon:hover {
+    transform: scale(1.2);
+}
+
+</style>
+</head>
+<body>
+    <header class="header">
+        <img class="goverment" src="nationalemv.png" alt="">
+          <h2>MindfulCampus</h2>
+          <nav class="nav-items">
+            <a href="index.html">HOME</a>
+            <a href="blog2.html">BLOG</a>
+            <a href="About-us.html">ABOUT</a>
+            <a href="contactus.html">CONTACT</a>
+         </nav>
+        </header>
+        <div>
+            <img class="intro" src="docimage1.jpeg" alt="">
+            <div class="overlay-text"><h1>Consult Your Doctor's</h1></div>
+        </div>
+        <hr>
+    </div>
+    <div class="middle">
+        <div class="quiz">
+            <img  class="intro" src="gayatri.jpeg" alt="">
+        </div>
+    
+    <div class="quiz2">
+        <div class="test"> 
+            <div class="q1">
+                <h1>Dr.Gayathri Krotha</h1>
+            </div>
+            <div class="q2">
+    <button class="toggle-button" onclick="toggleSlideDown()"><h1>Education</h1></button>
+</div>
+
+<div class="slide-down-content">
+    <div>
+        <ul>
+            <li><strong>Institute of mental health</strong><br>Master of Philosophy - MPhil, Clinical Psychology</li>
+            <li><strong>University of Madras</strong><br>Master's degree, counselling psychology
+            </li>
+            <li><strong>Ethiraj College For Women</strong><br>Bachelor's degree, Psychology
+            </li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div class="q2">
+    <button class="toggle-button" onclick="shashwat()"><h1>Language Skills</h1></button>
+</div>
+
+<div class="niche">
+    <ul>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Tamil</li>
+    </ul>
+</div>
+<hr>
+<div class="q2">
+    <button class="toggle-button" onclick="shashwatmi()"><h1> Qualification & Achivements</h1></button>
+</div>
+
+<div class="niche1">
+    <div>
+        <ul>
+            <li><strong>Activities and societies:</strong><p>Clinical postings (OPD and IPD) Rajiv Gandhi Government General Hospital (RGGGH- Chennai) in Paediatric Neurology, Cardiology, Oncology, Gastroenterology, Nephrology, Toxicology, Neurology. Post-Covid OPD, Active member of Covid- 19 Tele-Counselling programme initiated by TN Health Department.</p></li>
+            <li><strong>Internship in the Department of Clinical psychology, Institute of Mental Health (IMH), Kilpauk, Chennai.</strong></li>
+            <li><strong>Internship in Government Vigilance Home, Mylapore, Chennai</strong></li>
+            <li><strong>Internship in Department of Social Defense, Juvenile Justice Board, Kellys, Chennai.</strong></li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div class="q2">
+    <button class="toggle-button" onclick="shashwatmis()">
+        <h2>CONTACT</h2>
+    </button>
+</div>
+
+<div class="niche3">
+    <div  id="signup-form">
+        <h2 class="hell">Your-Problem</h2>
+        <form class="register" id="register-form">
+          <label class="uname" for="new-username">Name</label>
+          <input class="pos" type="text" id="new-username" name="new-username" required>
+      
+          <label class="pass" for="new-password">Age</label>
+          <input class="pos" type="number" id="new-password" name="new-password" required>
+          
+          <label class="uname" for="new-username">Email</label>
+          <input class="pos" type="email" id="new-username" name="new-username" required>
+      
+          <label class="pass" for="new-password">Mobile</label>
+          <input class="pos" type="number" id="new-password" name="new-password" required>
+
+          <label class="pass" for="new-password">Problem-Name</label>
+          <input class="pos" type="text" id="new-password" name="new-password" required>
+
+          <label class="pass" for="new-password">Enter Whole Problem-In-Detail</label>
+          <input class="pos" type="text" id="new-password" name="new-password" required>
+      
+          <button class="tre" type="button" onclick="registerUser()">SEND</button>
+        </form>
+        <p id="signup-message" style="color: green;"></p>
+      </div>
+      <div class="contact">
+        <div class="info1"><h2>Contact</h2></div>
+        <div class="address">
+            <img class="icon" src="address-icon-15.png" alt="">
+            <strong>Address:</strong>
+            <p>Bengaluru, Karnataka, India</p>
+            
+        </div>
+        
+        <div class="phone">
+            <img class="icon" src="email.jpeg" alt="">
+            <strong>Email: </strong>
+            <p>gaya3ratnam20@gmail.com</p>
+        </div>
+        <div class="phone">
+            <img class="icon" src="wesiteimage.webp" alt="">
+            <strong>Website:</strong>
+            <p><a href="linkedin.com/in/gayathri-krotha-516321114">LinkedIn</a></p>
+        </div>
+    </div>
+      </div>
+        </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="middle">
+        <div class="quiz">
+            <img  class="intro" src="Suhita-Saha.png.webp" alt="">
+        </div>
+    
+    <div class="quiz2">
+        <div class="test"> 
+            <div class="q1">
+                <h1>Dr.Suhita-Saha</h1>
+            </div>
+            <div class="q2">
+    <button class="toggle-button" onclick="toggleSlideDown2()"><h1>Education </h1></button>
+</div>
+
+<div class="slide-down-content22">
+    <div>
+       <ul><li><strong>M.A. M.Phil (RCI) in Clinical Psychology (RINPAS)</strong></li></ul>
+    </div>
+</div>
+<hr>
+<div class="q2">
+    <button class="toggle-button" onclick="shashwat2()"><h1>Language Skills</h1></button>
+</div>
+
+<div class="niche2">
+    <ul>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Bangali</li>
+    </ul>
+</div>
+<hr>
+<div class="q2">
+    <button class="toggle-button" onclick="shashwatmi2()"><h1> Qualification & Achivements</h1></button>
+</div>
+
+<div class="niche12">
+   <div>
+    <ul>
+        <li><p>She is specialised in several areas including psychological evaluation and assessment of various areas. She is trained in conducting psychometric tests and different types of psychotherapy including Cognitive Behavioural Therapy (CBT), Dialectic Behavioural Therapy (DBT), individual and family therapy. She is also trained in repetitive transcranial magnetic stimulation (rTMS) and psycho-oncology.</p></li>
+        <li><p>An RCI- registered psychologist, Suhita seeks to help patients who are going through emotional, intra-and inter-personal and psychological struggles. Her approach towards mental health treatment is biopsychosocial in nature - she considers the biological, psychological and social aspects of the illness in her therapies.</p></li>
+    </ul>
+   </div>
+</div>
+<hr>
+<div class="q2">
+    <button class="toggle-button" onclick="shashwatmis22()">
+        <h2>CONTACT</h2>
+    </button>
+</div>
+
+<div class="niche32">
+    <div  id="signup-form">
+        <h2 class="hell">Your-Problem</h2>
+        <form class="register" id="register-form">
+          <label class="uname" for="new-username">Name</label>
+          <input class="pos" type="text" id="new-username" name="new-username" required>
+      
+          <label class="pass" for="new-password">Age</label>
+          <input class="pos" type="number" id="new-password" name="new-password" required>
+          
+          <label class="uname" for="new-username">Email</label>
+          <input class="pos" type="email" id="new-username" name="new-username" required>
+      
+          <label class="pass" for="new-password">Mobile</label>
+          <input class="pos" type="number" id="new-password" name="new-password" required>
+
+          <label class="pass" for="new-password">Problem-Name</label>
+          <input class="pos" type="text" id="new-password" name="new-password" required>
+
+          <label class="pass" for="new-password">Enter Whole Problem-In-Detail</label>
+          <input class="pos" type="text" id="new-password" name="new-password" required>
+      
+          <button class="tre" type="button" onclick="registerUser()">SEND</button>
+        </form>
+        <p id="signup-message" style="color: green;"></p>
+      </div>
+      <div class="contact">
+        <div class="info1"><h2>Contact</h2></div>
+        <div class="address">
+            <img class="icon" src="address-icon-15.png" alt="">
+            <strong>Address:</strong>
+            <p>Kolkata, West Bengal, India</p>
+            
+        </div>
+        
+        
+        <div class="phone">
+            <img class="icon" src="wesiteimage.webp" alt="">
+            <strong>Website:</strong>
+            <p><a href="linkedin.com/in/suhita-saha-878653125">LinkedIn</a></p>
+        </div>
+    </div>
+      </div>
+        </div>
+        </div>
+    </div>
+
+    
+    </div>
+
+    <hr>
+    <div class="middle">
+        <div class="quiz">
+            <img  class="intro" src="udishi.jpeg" alt="">
+        </div>
+    
+    <div class="quiz2">
+        <div class="test"> 
+            <div class="q1">
+                <h1>Dr.Udisha Sarma</h1>
+            </div>
+            <div class="q2">
+    <button class="toggle-button" onclick="b1()"><h1>Education </h1></button>
+</div>
+
+<div class="b9">
+    <p>will be shared after .</p>
+</div>
+<hr>
+<div class="q2">
+    <button class="toggle-button" onclick="b2()"><h1>Language Skills</h1></button>
+</div>
+
+<div class="b8">
+    <ul>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Spanish</li>
+    </ul>
+</div>
+<hr>
+<div class="q2">
+    <button class="toggle-button" onclick="b3()"><h1> Qualification & Achivements</h1></button>
+</div>
+
+<div class="b7">
+   <div>
+    <ul>
+        <li><strong>Sweekar Academy of Rehabilitation Sciences, Secunderabad</strong><br><p>
+            Master of Philosophy (MPhil), Clinical Psychology</p></li>
+            <li><strong>Indraprastha College For Women</strong><br><p>Bachelor of Arts (B.A.), Psychology</p><br><p>Activities and societies: Volunteer in NSS (NATIONAL SOCIAL SERVICE SCHEME), Indraprastha College For Women, Delhi
+                (August’2010-March’2011) Active participation in NSS camps and events. Worked closely with visually challenged students in college.</p></li>
+        </ul>
+   </div>
+</div>
+<hr>
+<div class="q2">
+    <button class="toggle-button" onclick="b4()">
+        <h2>CONTACT</h2>
+    </button>
+</div>
+
+<div class="b6">
+    <div  id="signup-form">
+        <h2 class="hell">Your-Problem</h2>
+        <form class="register" id="register-form">
+          <label class="uname" for="new-username">Name</label>
+          <input class="pos" type="text" id="new-username" name="new-username" required>
+      
+          <label class="pass" for="new-password">Age</label>
+          <input class="pos" type="number" id="new-password" name="new-password" required>
+          
+          <label class="uname" for="new-username">Email</label>
+          <input class="pos" type="email" id="new-username" name="new-username" required>
+      
+          <label class="pass" for="new-password">Mobile</label>
+          <input class="pos" type="number" id="new-password" name="new-password" required>
+
+          <label class="pass" for="new-password">Problem-Name</label>
+          <input class="pos" type="text" id="new-password" name="new-password" required>
+
+          <label class="pass" for="new-password">Enter Whole Problem-In-Detail</label>
+          <input class="pos" type="text" id="new-password" name="new-password" required>
+      
+          <button class="tre" type="button" onclick="registerUser()">SEND</button>
+        </form>
+        <p id="signup-message" style="color: green;"></p>
+      </div>
+      <div class="contact">
+        <div class="info1"><h2>Contact</h2></div>
+        <div class="address">
+            <img class="icon" src="address-icon-15.png" alt="">
+            <strong>Address:</strong>
+            <p>Bengaluru, Karnataka, India</p>
+            
+        </div>
+        
+        <div class="phone">
+            <img class="icon" src="wesiteimage.webp" alt="">
+            <strong>Website:</strong>
+            <p><a href="linkedin.com/in/udisha-sarma-8aa47ba5">LinkedIn</a></p>
+        </div>
+    </div>
+      </div>
+        </div>
+        </div>
+    </div>
+    
+    <script >function toggleSlideDown() {
+        var content = document.querySelector('.slide-down-content');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+    function shashwat() {
+        var content = document.querySelector('.niche');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+    function shashwatmi() {
+        var content = document.querySelector('.niche1');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+    function shashwatmis() {
+        var content = document.querySelector('.niche3');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+    function registerUser() 
+  {
+        alert("MESSAGE SENT");
+        localStorage.setItem("isLoggedIn", "true");
+       
+    }
+
+    function toggleSlideDown2() {
+        var content = document.querySelector('.slide-down-content22');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+    function shashwat2() {
+        var content = document.querySelector('.niche2');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+    function shashwatmi2() {
+        var content = document.querySelector('.niche12');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+    function shashwatmis22() {
+        var content = document.querySelector('.niche32');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+
+    function b1() {
+        var content = document.querySelector('.b9');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+    function b2() {
+        var content = document.querySelector('.b8');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+    function b3() {
+        var content = document.querySelector('.b7');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+    function b4() {
+        var content = document.querySelector('.b6');
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+</script>
+</body>
+</html>

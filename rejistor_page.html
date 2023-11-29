@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #signup-form {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #signup-form h2{
+        float: inline;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .hell
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .uname ,.pass{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pos{
+        border-radius: 20px;
+    }
+    .tre{
+        border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div  id="signup-form">
+  <h2 class="hell">Register</h2>
+  <form class="register" id="register-form">
+    <label class="uname" for="new-username">Username</label>
+    <input class="pos" type="text" id="new-username" name="new-username" required>
+
+    <label class="pass" for="new-password">Password</label>
+    <input class="pos" type="password" id="new-password" name="new-password" required>
+    
+    <label class="uname" for="new-username">Email</label>
+    <input class="pos" type="email" id="new-username" name="new-username" required>
+
+    <label class="pass" for="new-password">Mobile</label>
+    <input class="pos" type="number" id="new-password" name="new-password" required>
+
+    <button class="tre" type="button" onclick="registerUser()">Done</button>
+  </form>
+  <p id="signup-message" style="color: green;"></p>
+</div>
+
+<script>
+  
+  function registerUser() 
+  {
+        alert("Login successful!");
+        localStorage.setItem("isLoggedIn", "true");
+        window.location.href = "index.html";
+    }
+</script>
+
+</body>
+</html>
